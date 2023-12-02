@@ -31,6 +31,7 @@
           <div class="col-md-10 main-title">
             <h2>Website under construction</h2>
             <h2>Come again :D</h2>
+            <h3>INI RILNYA</h3>
           </div>
         </div>
         <div class="row align-items-center">

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="https://i.imgur.com/aAjvnJ8.png">
 
-        <title>Rakai Seto</title>
+        <title>Coming Soon</title>
 
         <!-- Fonts --><!-- Bootstrap -->
         <link
