@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/projects.astro
 title: Moneta POS
 description: POS system for FnB and tourism businesses
 dateFormatted: Jul 14, 2024

@@ -1,9 +1,12 @@
 ---
-layout: ../../layouts/projects.astro
 title: Mekaniko+
-description: Mekaniko+ is an e-commerce platform designed for construction material suppliers and buyers.
-dateFormatted: Jul 14, 2024
+
+description: Mekaniko+ is an e-commerce platform designed for construction material suppliers and buyers.;
+
+dateFormatted: Jul 14, 2024;
+
 ---
+
 
 When i work at Ardora Cipta Kreasi, i happened to worked on an E-Commerce project using Laravel and Go. The project ended up not going to production, but i've worked on the backend and the frontend. The backend is built using Go and gRPC, and the frontend is built using Laravel.
 
