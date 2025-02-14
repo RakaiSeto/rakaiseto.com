@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "March 2024 · September 2024",
+		"role": "Full Stack Developer",
+		"company": "Ardora Cipta Kreasi Teknologi",
+		"description": "I introduced Docker and Docker Compose to streamline deployment processes and improved backend performance using Go—resulting in a RAM usage reduction of over 50%—while creating API connections for messaging, payment, and billing vendors. Additionally, I developed web applications for both client and admin usage and assisted in building an e-commerce dashboard using Laravel.",
+		"logo": "/assets/images/experiences/ardora.png"
+	},
+	{
+		"dates": "January 2023 · March 2024",
+		"role": "Full Stack Developer",
+		"company": "Artamaya Makmur Abadi",
+		"description": "Developed a Laravel-based POS system for cashier dashboards and client orders, integrating Go and gRPC to ensure secure data transmission and improved transaction efficiency. Maintained server reliability and designed transmitters to streamline vendor-client connectivity, ensuring consistent application uptime.",
+		"logo": "/assets/images/experiences/artamaya.jpg"
+	},
+	{
+		"dates": "May 2022 · October 2022",
+		"role": "Software Developer Internship",
+		"company": "PT. Pintar Cari Usaha",
+		"description": "Supported troubleshooting and optimization of internal backend code.",
+		"logo": "/assets/images/experiences/pcu.jpg"
+	}
+]

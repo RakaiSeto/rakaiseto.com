@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "January 2025 · present",
+		"role": "Head of Public Relations",
+		"company": "Workshop Riset Informatika",
+		"description": "Authored clear, impactful announcements for Workshop Riset Informatika’s initiatives while mentoring junior PR staff to foster teamwork and skill development. Spearheaded strategic partnerships with stakeholders and organizations to amplify event reach and strengthen collaborative networks.",
+		"logo": "/assets/images/experiences/wri.jpg"
+	},
+	{
+		"dates": "October 2023 · January 2025",
+		"role": "Mentor Web Miniclass (Frontend and Backend)",
+		"company": "Workshop Riset Informatika",
+		"description": "Mentored peers in frontend and backend development by leading workshops on HTML, CSS, JavaScript, and core programming concepts. Served as Chief Committee Lead for Workshop Riset Informatika’s 10th Dies Natalies, spearheading event organization and fostering collaborative learning initiatives.",
+		"logo": null
+	},
+	{
+		"dates": "September 2023 · present",
+		"role": "Komandan Tingkat JTI'23",
+		"company": "Himpunan Mahasiswa Teknologi Informasi Polinema",
+		"description": "Being a class president in Information Technology Department who helps coordinate students when there will be activities or events to be held by the department",
+		"logo": "/assets/images/experiences/hmti.jpg"
+	}
+]
