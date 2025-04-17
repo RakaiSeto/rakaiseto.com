@@ -77,7 +77,7 @@ import Logo from "../components/logo.astro";
 </header>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const currentPath = Astro.url.pathname;
+    const currentPath = window.location.pathname;
     const menuLinks = document.querySelectorAll('#menu a');
     
     menuLinks.forEach(link => {
