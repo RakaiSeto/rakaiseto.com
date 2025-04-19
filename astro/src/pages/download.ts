@@ -6,9 +6,19 @@ import { type APIRoute } from 'astro';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const GET: APIRoute = async () => {
-  const filePath = path.join(__dirname, '../../public/CV_RAKAI.pdf');
+  // In production, the public directory is served directly
+  // Use the correct path based on the environment
+  const filePath = path.join(process.env.NODE_ENV === 'production' 
+    ? process.cwd() 
+    : __dirname, 
+    'public/CV_RAKAI.pdf'
+  );
   
   try {
+    if (!fs.existsSync(filePath)) {
+      return new Response('File not found', { status: 404 });
+    }
+    
     const file = fs.readFileSync(filePath);
     return new Response(file, {
       headers: {
@@ -17,6 +27,7 @@ export const GET: APIRoute = async () => {
       }
     });
   } catch (error) {
-    return new Response('File not found', { status: 404 });
+    console.error('Error reading file:', error);
+    return new Response('Internal Server Error', { status: 500 });
   }
 };
