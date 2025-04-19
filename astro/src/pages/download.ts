@@ -23,7 +23,7 @@ export const GET: APIRoute = async () => {
     return new Response(file, {
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="CV_RAKAI.pdf"'
+        'Content-Disposition': `attachment; filename="CV_RAKAI.pdf"; filename*=UTF-8''CV_RAKAI.pdf`
       }
     });
   } catch (error) {
