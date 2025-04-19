@@ -6,7 +6,7 @@ import { type APIRoute } from 'astro';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const GET: APIRoute = async () => {
-  const filePath = path.join(__dirname, '../content/CV RAKAI INGGRIS.pdf');
+  const filePath = path.join(__dirname, '../../public/CV_RAKAI.pdf');
   
   try {
     const file = fs.readFileSync(filePath);
