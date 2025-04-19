@@ -16,18 +16,20 @@ export const GET: APIRoute = async () => {
   
   try {
     if (!fs.existsSync(filePath)) {
-      return new Response('File not found', { status: 404 });
+      console.error('File not found at path:', filePath);
+      return new Response(`File not found at: ${filePath}`, { status: 404 });
     }
     
     const file = fs.readFileSync(filePath);
     return new Response(file, {
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': `attachment; filename="CV_RAKAI.pdf"; filename*=UTF-8''CV_RAKAI.pdf`
+        'Content-Disposition': `attachment; filename="CV_RAKAI.pdf"; filename*=UTF-8''CV_RAKAI.pdf`,
+        'Content-Length': file.length.toString()
       }
     });
   } catch (error) {
     console.error('Error reading file:', error);
-    return new Response('Internal Server Error', { status: 500 });
+    return new Response(`Internal Server Error: ${error.message}`, { status: 500 });
   }
 };
