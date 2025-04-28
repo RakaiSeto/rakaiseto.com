@@ -1,6 +1,6 @@
 ---
 title: panjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaang
-description: Link expander for you (in)convenience
+description: Link expander for your (in)convenience
 dateFormatted: Apr 27, 2025
 techstack: ["Vue.js", "Node.js"]
 ---
