@@ -3,18 +3,21 @@
 		"name": "Moneta POS",
 		"description": "POS system for FnB and tourism businesses",
 		"image": "/assets/images/projects/moneta/moneta.jpeg",
-		"url": "/projects/monetapos"
+		"url": "/projects/monetapos",
+		"techstack": ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
 	},
 	{
 		"name": "panjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaang",
 		"description": "Link expander for you (in)convenience",
 		"image": "/assets/images/projects/panjang/panjang.png",
-		"url": "/projects/panjang"
+		"url": "/projects/panjang",
+		"techstack": ["Vue.js", "Node.js"]
 	},
 	{
 		"name": "Mekaniko+",
 		"description": "Mekaniko+ is an e-commerce platform designed for construction material suppliers and buyers.",
 		"image": "/assets/images/projects/mekaniko/mekaniko.png",
-		"url": "/projects/mekaniko"
+		"url": "/projects/mekaniko",
+		"techstack": ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
 	}
 ]

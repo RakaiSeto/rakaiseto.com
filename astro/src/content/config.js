@@ -6,6 +6,7 @@ const projectCollection = defineCollection({
 		title: z.string(),
 		description: z.string(),
 		dateFormatted: z.string(),
+		techstack: z.array(z.string()).optional(),
 	}),
 });
 

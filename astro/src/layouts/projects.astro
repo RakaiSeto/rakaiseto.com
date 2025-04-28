@@ -1,6 +1,6 @@
 ---
 import Layout from "./main.astro";
-const { title } = Astro.props;
+const { title, techstack } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -19,10 +19,26 @@ const { title } = Astro.props;
       >
       </div>
       <h1
-        class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none break-all"
+        class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-2 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none break-all"
       >
         {title}
       </h1>
+      <div
+        class="w-full border-t border-b flex gap-[1rem] mx-auto max-w-2xl md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
+      >
+        {
+          techstack &&
+            techstack.map((tech) => (
+              <div class="flex flex-col items-center">
+                <img
+                  src={`/assets/images/techstack/${tech}.png`}
+                  class="h-10 w-10 mt-2 border border-dashed rounded"
+                />
+                <span class="text-sm text-neutral-700 dark:text-neutral-100 font-semibold text-center">{tech}</span>
+              </div>
+            ))
+        }
+      </div>
     </div>
 
     <article

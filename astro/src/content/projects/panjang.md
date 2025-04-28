@@ -2,6 +2,7 @@
 title: panjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaang
 description: Link expander for you (in)convenience
 dateFormatted: Apr 27, 2025
+techstack: ["Vue.js", "Node.js"]
 ---
 
 Ever using a link shortener? Now try the opposite. Silly innit? At first, so i thought. But then i realized, there're 2 types of link shortener: the ones that make the link shorter but with readable/customizable name, and the ones that just make the link a short string of gibberish.

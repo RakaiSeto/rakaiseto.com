@@ -1,5 +1,5 @@
 ---
-const { name, description, url, image } = Astro.props;
+const { name, description, url, image, techstack } = Astro.props;
 ---
 
 <a
@@ -45,6 +45,15 @@ const { name, description, url, image } = Astro.props;
           ></svg
         >
       </span>
+      <div class="flex">
+        {techstack &&
+          techstack.map((tech) => (
+            <img
+              src={`/assets/images/techstack/${tech}.png`}
+              class="h-7 w-7 border border-dashed rounded mx-1"
+            />
+          ))}
+      </div>
       <span class="text-sm text-neutral-600 dark:text-neutral-400 block truncate"
         >{description}</span
       >

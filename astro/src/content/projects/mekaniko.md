@@ -5,6 +5,8 @@ description: Mekaniko+ is an e-commerce platform designed for construction mater
 
 dateFormatted: Jul 14, 2024;
 
+techstack: ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
+
 ---
 
 
