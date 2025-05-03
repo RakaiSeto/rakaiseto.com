@@ -1,0 +1,33 @@
+---
+import blog from "../collections/blog.json";
+import PageHeading from "../components/page-heading.astro";
+import Blog from "../components/blog.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="My Blog">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="My Blog"
+      description="Here i poured some of my thoughts about technology and stuff in general, happy reading"
+    />
+
+    <div
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+    >
+      {
+        blog.map((blog) => {
+          return (
+            <Blog
+              name={blog.name}
+              date={blog.date}
+              tags={blog.tags}
+              description={blog.description}
+              url={blog.url}
+            />
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>
