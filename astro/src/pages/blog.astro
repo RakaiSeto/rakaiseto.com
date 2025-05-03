@@ -1,7 +1,7 @@
 ---
 import blog from "../collections/blog.json";
 import PageHeading from "../components/page-heading.astro";
-import Blog from "../components/blog.astro";
+import BlogCard from "../components/blog.astro";
 import Layout from "../layouts/main.astro";
 ---
 
@@ -18,7 +18,7 @@ import Layout from "../layouts/main.astro";
       {
         blog.map((blog) => {
           return (
-            <Blog
+            <BlogCard
               name={blog.name}
               date={blog.date}
               tags={blog.tags}
