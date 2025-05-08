@@ -1,6 +1,6 @@
 ---
 import Layout from "./main.astro";
-const { title, tags, date } = Astro.props;
+const { title, tags, date, image } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -37,6 +37,10 @@ const { title, tags, date } = Astro.props;
         }
       </div>
     </div>
+    {
+      image &&
+      <img src={image} alt={title} class="w-full max-w-2xl mx-auto mb-20 rounded-lg" />
+    }
 
     <article
       class="w-full max-w-2xl mx-auto mb-20 prose-sm prose px-7 lg:px-0 lg:prose-lg dark:prose-invert"

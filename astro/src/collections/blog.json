@@ -5,5 +5,12 @@
 		"date": "May 3rd 2025",
 		"url": "/blog/origin",
 		"tags": ["journey", "yapping"]
+	},
+	{
+		"name": "The problem with Cursor",
+		"description": "Is cursor dangerous for students learning to code?",
+		"date": "May 8th 2025",
+		"url": "/blog/the-problem-with-cursor",
+		"tags": ["ai", "education", "yapping", "cursor"]
 	}
 ]
