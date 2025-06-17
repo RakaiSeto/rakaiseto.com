@@ -7,6 +7,13 @@
 		"techstack": ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
 	},
 	{
+		"name": "DuitRapi (coming soon)",
+		"description": "DuitRapi is a platform for managing and analyzing financial data.",
+		"image": "/assets/images/projects/duitrapi/duitrapi.png",
+		"url": "/projects/duitrapi",
+		"techstack": ["React.js", "Node.js", "AWS"]
+	},
+	{
 		"name": "panjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaang",
 		"description": "Link expander for your (in)convenience",
 		"image": "/assets/images/projects/panjang/panjang.png",
