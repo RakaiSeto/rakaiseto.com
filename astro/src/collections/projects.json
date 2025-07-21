@@ -1,12 +1,5 @@
 [
 	{
-		"name": "Moneta POS",
-		"description": "POS system for FnB and tourism businesses",
-		"image": "/assets/images/projects/moneta/moneta.jpeg",
-		"url": "/projects/monetapos",
-		"techstack": ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
-	},
-	{
 		"name": "DuitRapi (coming soon)",
 		"description": "DuitRapi is a platform for managing and analyzing financial data.",
 		"image": "/assets/images/projects/duitrapi/duitrapi.png",
@@ -19,6 +12,20 @@
 		"image": "/assets/images/projects/panjang/panjang.png",
 		"url": "/projects/panjang",
 		"techstack": ["Vue.js", "Node.js"]
+	},
+	{
+		"name": "SIPASTI",
+		"description": "Information system for repair and recording of infrastructure facilities",
+		"image": "/assets/images/projects/sipasti/home.png",
+		"url": "/projects/sipasti",
+		"techstack": ["Laravel"]
+	},
+	{
+		"name": "Moneta POS",
+		"description": "POS system for FnB and tourism businesses",
+		"image": "/assets/images/projects/moneta/moneta.jpeg",
+		"url": "/projects/monetapos",
+		"techstack": ["Golang", "Laravel", "Redis", "Grpc", "RabbitMQ"]
 	},
 	{
 		"name": "Mekaniko+",
