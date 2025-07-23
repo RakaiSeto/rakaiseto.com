@@ -12,7 +12,9 @@ techstack: ["Laravel"]
 ![SiPasti](/assets/images/projects/sipasti/home.png)
 SIPASTI is an information system for repair and recording of infrastructure facilities. The project is built using Laravel and MySQL. 
 
-The project was built for completion of my 4th semester final project with 4 other friends of mine. The development took about 2 months to complete with most of the duration spent on the design and planning phase. Sipasti has 4 roles: 
+The project was built for completion of my 4th semester final project with 4 other friends of mine. The development took about 2 months to complete with most of the duration spent on the design and planning phase. Sipasti has been registered for Intellectual Property Rights under registration number 000910879.
+
+Sipasti has 4 roles: 
 - Admin: Responsible for managing the system and facilities data.
 - Civitas: Students, Staffs, and Lecturers. Capable of reporting and requesting repair of infrastructure facilities.
 - Sarpras: Responsible for managing and verifying reports. Sarpras can also assign technician to repair the infrastructure facilities according to report.
