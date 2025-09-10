@@ -20,11 +20,13 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 2233
           script: |
-            cd /github/rakaiseto.com/astro
-            sudo git pull
-            sudo git status
+            echo "Navigating to deployment directory..."
+            cd /github/rakaiseto.com/astro            
+            echo "Pulling latest code from Git..."
+            git pull
             
-            sudo rm -rf dist
-            npm i
-            npm run build
-            pm2 restart all
+            cd /github
+            echo "Rebuilding and restarting the rakaiseto.com service..."
+            # The --build flag forces a rebuild on the server
+            # The --no-deps flag ensures only this service is affected
+            docker compose up -d --build --no-deps rakaiseto-com
