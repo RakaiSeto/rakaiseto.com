@@ -1,4 +1,11 @@
 [
+    {
+		"dates": "September 2025 · present",
+		"role": "Backend Developer",
+		"company": "Sekawan Media",
+		"description": "Being part of the team behind HaloGigi, a dental self screening and telemedicine platform. Developed fast and efficient backend API for the platform using laravel and MySQL, provided clean data for mobile developers, ensuring application stability and speed.",
+		"logo": "/assets/images/experiences/sekawan.png"
+	},
 	{
 		"dates": "March 2024 · September 2024",
 		"role": "Full Stack Developer",
