@@ -9,16 +9,16 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm run build # This generates dist/server/entry.mjs
+RUN npm run build
 
-# Stage 2: The Final, Lightweight Nginx Runner (Nginx)
-FROM nginx:alpine # <--- MUST BE NGINX IMAGE
+# Stage 2: The Final, Lightweight Nginx Image
+FROM nginx:alpine
 
 # FIX: Copy the static assets from the `dist/client` directory
-COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/client /usr/share/nginx/html
 
 # Expose the standard HTTP port
 EXPOSE 80
 
-# The command must be Nginx
+# The command to start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
