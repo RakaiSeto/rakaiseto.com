@@ -1,7 +1,7 @@
 // File: ecosystem.config.js
 module.exports = {
     apps: [{
-      name: "chery-web",
+      name: "rakaiseto-com",
       script: "./dist/server/entry.mjs",
       instances: 1,
       autorestart: true,
@@ -9,7 +9,7 @@ module.exports = {
       max_memory_restart: '1G',
       env: {
         NODE_ENV: "production",
-        PORT: 4321,
+        PORT: 8092,
         HOST: "0.0.0.0", // Add this line
       },
     }]
