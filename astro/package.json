@@ -24,6 +24,7 @@
 		"@astrojs/node": "^9.1.0",
 		"@types/node": "^22.14.1",
 		"bootstrap-icons": "^1.11.3",
-		"express": "^5.1.0"
+		"express": "^5.1.0",
+		"pm2": "^6.0.13"
 	}
 }
