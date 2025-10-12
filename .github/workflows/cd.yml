@@ -25,8 +25,5 @@ jobs:
             echo "Pulling latest code from Git..."
             git pull
             
-            cd /github
-            echo "Rebuilding and restarting the rakaiseto.com service..."
-            # The --build flag forces a rebuild on the server
-            # The --no-deps flag ensures only this service is affected
-            docker compose up -d --build --no-deps rakaiseto-com
+            pm2 delete rakaiseto-com
+            pm2 start wrapper.js --name rakaiseto-com
