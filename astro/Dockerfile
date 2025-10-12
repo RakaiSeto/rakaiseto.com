@@ -14,6 +14,12 @@ RUN npm run build # This generates dist/server/entry.mjs
 # Stage 2: The Final, Lightweight Node.js Runner
 FROM node:18-alpine
 
+# === THE FINAL FIX: CREATE USER AND GROUP IN THE FINAL STAGE ===
+# 1. Create the group
+RUN addgroup -S appgroup
+# 2. Create the user and add them to the group
+RUN adduser -S appuser -G appgroup
+
 # FIX: Copy the static assets from the `dist/client` directory
 COPY --from=builder /usr/src/app/dist/client /usr/share/nginx/html
 
