@@ -12,6 +12,7 @@ export default defineConfig({
     mode: "middleware",
   }),
   server: {
+    port: 8092,
     host: true
   }
 });
