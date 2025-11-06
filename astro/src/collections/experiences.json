@@ -6,11 +6,18 @@
 		"description": "Being part of the team behind HaloGigi, a dental self screening and telemedicine platform. Developed fast and efficient backend API for the platform using laravel and MySQL, provided clean data for mobile developers, ensuring application stability and speed.",
 		"logo": "/assets/images/experiences/sekawan.png"
 	},
+    {
+		"dates": "September 2024 · September 2025",
+		"role": "Co Founder / Backend Developer",
+		"company": "Stealth Startup (Undisclosed Company)",
+		"description": "Co-founded and developed the backend for a SaaS telecomunication platform used by one of Indonesia’s major ride-hailing companies. Designed scalable microservices using Go, PostgreSQL, and Redis to handle high-traffic operations, while implementing CI/CD pipelines with Docker and Git. Led backend development and ensured secure, reliable, and high-performance systems for large-scale production use.",
+		"logo": "/assets/images/experiences/cloud.png"
+	},
 	{
 		"dates": "March 2024 · September 2024",
 		"role": "Full Stack Developer",
 		"company": "Ardora Cipta Kreasi Teknologi",
-		"description": "I introduced Docker and Docker Compose to streamline deployment processes and improved backend performance using Go—resulting in a RAM usage reduction of over 50%—while creating API connections for messaging, payment, and billing vendors. Additionally, I developed web applications for both client and admin usage and assisted in building an e-commerce dashboard using Laravel.",
+		"description": "Introduced Docker and Docker Compose to streamline deployment processes and improved backend performance using Go—resulting in a RAM usage reduction of over 50%—while creating API connections for messaging, payment, and billing vendors. Additionally, I developed web applications for both client and admin usage and assisted in building an e-commerce dashboard using Laravel.",
 		"logo": "/assets/images/experiences/ardora.png"
 	},
 	{
