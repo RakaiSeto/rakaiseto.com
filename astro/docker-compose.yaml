@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   rakaiseto:
+    networks:
+      - rakaiseto-com-network
     image: ghcr.io/rakaiseto/rakaiseto.com:latest
     container_name: rakaiseto-com
     restart: always
@@ -11,3 +13,5 @@ services:
       NODE_ENV: production
       PORT: 8092
       HOST: "0.0.0.0"
+networks:
+  rakaiseto-com-network:
