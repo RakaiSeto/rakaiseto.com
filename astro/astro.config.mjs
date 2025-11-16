@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind()],
 
   adapter: node({
-    mode: "middleware",
+    mode: "standalone",
   }),
   server: {
     port: 8092,

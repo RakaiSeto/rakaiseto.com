@@ -9,3 +9,5 @@ services:
       - "127.0.0.1:21001:4321"
     environment:
       NODE_ENV: production
+      PORT: 8092
+      HOST: "0.0.0.0"
