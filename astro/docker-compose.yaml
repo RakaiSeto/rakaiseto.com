@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  rakaiseto:
+    image: ghcr.io/rakaiseto/rakaiseto.com:latest
+    container_name: rakaiseto-com
+    restart: always
+    ports:
+      - "127.0.0.1:21001:4321"
+    environment:
+      NODE_ENV: production
