@@ -1,8 +1,8 @@
-import experiences from "../collections/experiences.json";
 import educations from "../collections/education.json";
+import experiences from "../collections/experiences.json";
 import organizations from "../collections/organizations.json";
-import PageHeading from "../components/ui/PageHeading";
 import BrutalCard from "../components/ui/BrutalCard";
+import PageHeading from "../components/ui/PageHeading";
 import Reveal from "../components/ui/Reveal";
 
 export default function AboutRoute() {
@@ -73,10 +73,15 @@ function InfoTimeline({ title, entries }: { title: string; entries: Entry[] }) {
 
 	return (
 		<section>
-			<h2 className="mb-5 text-3xl font-semibold tracking-tight text-soft">{title}</h2>
+			<h2 className="mb-5 text-3xl font-semibold tracking-tight text-soft">
+				{title}
+			</h2>
 			<div className="relative space-y-5 pl-8 before:absolute before:bottom-6 before:left-[11px] before:top-4 before:w-px before:bg-line/70">
 				{groupedEntries.map((group, groupIndex) => (
-					<Reveal key={`${group.company}-${groupIndex}`} delay={groupIndex * 70}>
+					<Reveal
+						key={`${group.company}-${groupIndex}`}
+						delay={groupIndex * 70}
+					>
 						<div className="relative">
 							<BrutalCard className="p-0">
 								<div className="border-b border-line/70 p-5">

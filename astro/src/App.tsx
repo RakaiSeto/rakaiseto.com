@@ -1,19 +1,21 @@
-import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import SiteLayout from "./components/layout/SiteLayout";
-import HomeRoute from "./routes/home";
 import AboutRoute from "./routes/about";
-import ProjectsRoute from "./routes/projects";
-import ProjectDetailRoute from "./routes/project-detail";
 import BlogRoute from "./routes/blog";
 import BlogDetailRoute from "./routes/blog-detail";
+import HomeRoute from "./routes/home";
 import NotFoundRoute from "./routes/not-found";
+import ProjectDetailRoute from "./routes/project-detail";
+import ProjectsRoute from "./routes/projects";
 
 function ScrollToTop() {
 	const location = useLocation();
 
 	useEffect(() => {
-		window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+		if (location.pathname) {
+			window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+		}
 	}, [location.pathname]);
 
 	return null;

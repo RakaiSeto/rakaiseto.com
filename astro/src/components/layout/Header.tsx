@@ -65,7 +65,11 @@ export default function Header() {
 						/>
 					))}
 					<NavItem href="/blog" label="Blog" onClick={() => setOpen(false)} />
-					<NavItem href="/projects" label="Projects" onClick={() => setOpen(false)} />
+					<NavItem
+						href="/projects"
+						label="Projects"
+						onClick={() => setOpen(false)}
+					/>
 					<div className="mt-1 grid grid-cols-2 gap-2">
 						<a
 							href="/CV_RAKAI.pdf"

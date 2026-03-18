@@ -10,7 +10,9 @@ export default function BlogDetailRoute() {
 	if (!blog) {
 		return (
 			<section className="rounded-3xl border border-line/70 bg-surface/80 p-6 shadow-panel md:p-10">
-				<p className="font-mono text-xs tracking-[0.14em] text-accent">WRITING DETAIL</p>
+				<p className="font-mono text-xs tracking-[0.14em] text-accent">
+					WRITING DETAIL
+				</p>
 				<h1 className="mt-3 text-3xl font-semibold tracking-tight text-soft md:text-5xl">
 					Tulisan tidak ditemukan
 				</h1>

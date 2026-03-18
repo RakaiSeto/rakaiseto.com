@@ -26,7 +26,10 @@ export default function ProjectsScrollStack({
 					useWindowScroll
 				>
 					{featured.map((project, index) => (
-						<ScrollStackItem key={project.url} itemClassName="project-stack-item">
+						<ScrollStackItem
+							key={project.url}
+							itemClassName="project-stack-item"
+						>
 							<Link
 								to={project.url}
 								className="block h-full overflow-hidden rounded-2xl border border-line/70 bg-[#1a2740]/72 p-4 shadow-card backdrop-blur-sm transition duration-300 hover:border-accent/45"
@@ -62,7 +65,9 @@ export default function ProjectsScrollStack({
 							to="/projects"
 							className="flex h-full min-h-[20rem] flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-accent/60 bg-accent/20 p-7 text-center shadow-card backdrop-blur-sm transition duration-300 hover:bg-accent/25"
 						>
-							<p className="font-mono text-xs tracking-[0.15em] text-accent">04</p>
+							<p className="font-mono text-xs tracking-[0.15em] text-accent">
+								04
+							</p>
 							<p className="mt-2 text-2xl font-semibold text-soft">See More</p>
 							<p className="mt-2 text-sm text-muted">
 								Explore all projects and detailed writeups.

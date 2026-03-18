@@ -54,7 +54,10 @@ function parseFrontmatterValue(rawValue: string): FrontmatterValue {
 	return value;
 }
 
-function parseMarkdownFile(raw: string): { data: Record<string, FrontmatterValue>; body: string } {
+function parseMarkdownFile(raw: string): {
+	data: Record<string, FrontmatterValue>;
+	body: string;
+} {
 	const normalized = raw.replace(/\r\n/g, "\n");
 	if (!normalized.startsWith("---\n")) {
 		return { data: {}, body: normalized.trim() };
@@ -95,7 +98,9 @@ function getStringValue(value: FrontmatterValue | undefined): string {
 	return "";
 }
 
-function getStringArrayValue(value: FrontmatterValue | undefined): string[] | undefined {
+function getStringArrayValue(
+	value: FrontmatterValue | undefined,
+): string[] | undefined {
 	if (Array.isArray(value)) {
 		return value;
 	}
@@ -124,7 +129,9 @@ function markdownToExcerpt(markdown: string): string {
 		return "";
 	}
 
-	return cleaned.length > 140 ? `${cleaned.slice(0, 137).trimEnd()}...` : cleaned;
+	return cleaned.length > 140
+		? `${cleaned.slice(0, 137).trimEnd()}...`
+		: cleaned;
 }
 
 export function getProjectEntries(): ProjectEntry[] {
@@ -149,7 +156,9 @@ export function getProjectEntries(): ProjectEntry[] {
 					.replace(/;\s*$/, "")
 					.trim(),
 				techstack: getStringArrayValue(parsed.data.techstack),
-				image: getStringValue(parsed.data.image) || getFirstImageFromMarkdown(content),
+				image:
+					getStringValue(parsed.data.image) ||
+					getFirstImageFromMarkdown(content),
 				body: content,
 			};
 		})
@@ -167,7 +176,8 @@ export function getBlogEntries(): BlogEntry[] {
 		.map(([path, raw]) => {
 			const parsed = parseMarkdownFile(raw);
 			const content = String(parsed.body ?? "").trim();
-			const description = getStringValue(parsed.data.description) || markdownToExcerpt(content);
+			const description =
+				getStringValue(parsed.data.description) || markdownToExcerpt(content);
 			return {
 				slug: slugFromPath(path),
 				title: getStringValue(parsed.data.title),

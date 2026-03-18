@@ -1,5 +1,17 @@
-import { useState, useCallback, useEffect, useRef, type CSSProperties, type ReactNode } from "react";
-import { motion, useMotionValue, useAnimationFrame, useTransform } from "motion/react";
+import {
+	motion,
+	useAnimationFrame,
+	useMotionValue,
+	useTransform,
+} from "motion/react";
+import {
+	type CSSProperties,
+	type ReactNode,
+	useCallback,
+	useEffect,
+	useRef,
+	useState,
+} from "react";
 import "./GradientText.css";
 
 type Direction = "horizontal" | "vertical" | "diagonal";
@@ -54,7 +66,9 @@ export default function GradientText({
 			if (cycleTime < animationDuration) {
 				progress.set((cycleTime / animationDuration) * 100);
 			} else {
-				progress.set(100 - ((cycleTime - animationDuration) / animationDuration) * 100);
+				progress.set(
+					100 - ((cycleTime - animationDuration) / animationDuration) * 100,
+				);
 			}
 		} else {
 			progress.set((elapsedRef.current / animationDuration) * 100);
@@ -111,7 +125,9 @@ export default function GradientText({
 
 	return (
 		<motion.div
-			className={`animated-gradient-text ${showBorder ? "with-border" : ""} ${className}`}
+			className={`animated-gradient-text ${
+				showBorder ? "with-border" : ""
+			} ${className}`}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 		>
@@ -121,7 +137,10 @@ export default function GradientText({
 					style={{ ...gradientStyle, backgroundPosition }}
 				/>
 			) : null}
-			<motion.div className="text-content" style={{ ...gradientStyle, backgroundPosition }}>
+			<motion.div
+				className="text-content"
+				style={{ ...gradientStyle, backgroundPosition }}
+			>
 				{children}
 			</motion.div>
 		</motion.div>

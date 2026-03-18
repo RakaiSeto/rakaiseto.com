@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import PageHeading from "../components/ui/PageHeading";
 import BrutalCard from "../components/ui/BrutalCard";
+import PageHeading from "../components/ui/PageHeading";
 import Reveal from "../components/ui/Reveal";
 import { getProjectEntries } from "../lib/content";
 

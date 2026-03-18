@@ -10,7 +10,9 @@ export default function ProjectDetailRoute() {
 	if (!project) {
 		return (
 			<section className="rounded-3xl border border-line/70 bg-surface/80 p-6 shadow-panel md:p-10">
-				<p className="font-mono text-xs tracking-[0.14em] text-accent">PROJECT DETAIL</p>
+				<p className="font-mono text-xs tracking-[0.14em] text-accent">
+					PROJECT DETAIL
+				</p>
 				<h1 className="mt-3 text-3xl font-semibold tracking-tight text-soft md:text-5xl">
 					Project tidak ditemukan
 				</h1>

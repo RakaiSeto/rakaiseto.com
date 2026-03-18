@@ -1,13 +1,47 @@
-# Aria Template
+# rakaiseto.com
 
-This is a personal blog, portfolio, or blog template created for [Astro](https://astro.build).
+Personal portfolio and blog built with React + Vite.
 
-Astro port of [aria](https://github.com/static-templates/aria).
+## Tech Stack
 
-![Aria Template Cover Photo](https://github.com/ccbikai/astro-aria/blob/main/public/assets/images/cover.png?raw=true)
+- React 19
+- React Router 7
+- TypeScript
+- Tailwind CSS
+- Vite
 
-You can install this theme with the [Astro](https://astro.build) command like so:
+## Development
 
-```js
-npm create astro@latest -- --template ccbikai/astro-aria
+Install dependencies:
+
+```bash
+npm install
 ```
+
+Run local dev server:
+
+```bash
+npm run dev
+```
+
+Build production assets:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## Content
+
+- Blog markdown files: `src/content/blog`
+- Project markdown files: `src/content/projects`
+- About timeline data: `src/collections/*.json`
+
+## Deployment
+
+Static build output is generated in `dist/` and served by Nginx via `Dockerfile`.

@@ -34,8 +34,10 @@ export default function ProjectsCircularCarousel({
 		[active, projects],
 	);
 
-	const onNext = () => setActive((current) => wrapIndex(current + 1, projects.length));
-	const onPrev = () => setActive((current) => wrapIndex(current - 1, projects.length));
+	const onNext = () =>
+		setActive((current) => wrapIndex(current + 1, projects.length));
+	const onPrev = () =>
+		setActive((current) => wrapIndex(current - 1, projects.length));
 
 	return (
 		<section
@@ -48,10 +50,11 @@ export default function ProjectsCircularCarousel({
 					onPrev();
 				}
 			}}
-			tabIndex={0}
 		>
 			<div className="mb-5 flex items-center justify-between">
-				<p className="font-mono text-xs tracking-[0.15em] text-accent">CIRCULAR CAROUSEL</p>
+				<p className="font-mono text-xs tracking-[0.15em] text-accent">
+					CIRCULAR CAROUSEL
+				</p>
 				<div className="flex gap-2">
 					<button
 						type="button"
@@ -137,7 +140,9 @@ export default function ProjectsCircularCarousel({
 						onClick={() => setActive(index)}
 						className={[
 							"h-2.5 rounded-full transition-all",
-							index === active ? "w-8 bg-accent" : "w-2.5 bg-line/45 hover:bg-line/70",
+							index === active
+								? "w-8 bg-accent"
+								: "w-2.5 bg-line/45 hover:bg-line/70",
 						].join(" ")}
 						aria-label={`Select ${project.name}`}
 					/>
