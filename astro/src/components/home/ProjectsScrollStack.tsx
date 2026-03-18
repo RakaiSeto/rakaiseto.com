@@ -51,7 +51,7 @@ export default function ProjectsScrollStack({
 										<p className="mt-2 break-words whitespace-normal text-xl font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 											{project.name}
 										</p>
-										<p className="mt-2 break-words whitespace-normal text-sm leading-relaxed text-muted [overflow-wrap:anywhere]">
+										<p className="mt-2 break-words whitespace-normal text-sm leading-relaxed text-soft/80 [overflow-wrap:anywhere]">
 											{project.description}
 										</p>
 									</div>
@@ -69,7 +69,7 @@ export default function ProjectsScrollStack({
 								04
 							</p>
 							<p className="mt-2 text-2xl font-semibold text-soft">See More</p>
-							<p className="mt-2 text-sm text-muted">
+							<p className="mt-2 text-sm text-soft/80">
 								Explore all projects and detailed writeups.
 							</p>
 						</Link>

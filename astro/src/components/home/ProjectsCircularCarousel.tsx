@@ -59,14 +59,14 @@ export default function ProjectsCircularCarousel({
 					<button
 						type="button"
 						onClick={onPrev}
-						className="rounded-full border border-line/70 px-3 py-1 text-xs text-muted transition hover:border-accent/70 hover:text-accent"
+						className="rounded-full border border-line/70 px-3 py-1 text-xs text-soft/80 transition hover:border-accent/70 hover:text-accent"
 					>
 						Prev
 					</button>
 					<button
 						type="button"
 						onClick={onNext}
-						className="rounded-full border border-line/70 px-3 py-1 text-xs text-muted transition hover:border-accent/70 hover:text-accent"
+						className="rounded-full border border-line/70 px-3 py-1 text-xs text-soft/80 transition hover:border-accent/70 hover:text-accent"
 					>
 						Next
 					</button>
@@ -124,7 +124,7 @@ export default function ProjectsCircularCarousel({
 							<p className="clamp-2 mt-3 text-sm font-semibold leading-tight text-soft md:text-base">
 								{project.name}
 							</p>
-							<p className="clamp-2 mt-1 text-xs leading-relaxed text-muted md:text-sm">
+							<p className="clamp-2 mt-1 text-xs leading-relaxed text-soft/80 md:text-sm">
 								{project.description}
 							</p>
 						</Link>

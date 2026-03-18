@@ -12,7 +12,7 @@ export default function Footer() {
 					<p className="mt-2 text-2xl font-semibold tracking-tight text-soft">
 						Rakai Seto
 					</p>
-					<p className="mt-2 text-sm text-muted">
+					<p className="mt-2 text-sm text-soft/80">
 						&copy; {new Date().getFullYear()} All rights reserved.
 					</p>
 				</div>
@@ -23,7 +23,7 @@ export default function Footer() {
 							href={social.href}
 							target="_blank"
 							rel="noreferrer"
-							className="rounded-full border border-line/80 px-3 py-2 font-mono text-xs uppercase tracking-[0.14em] text-muted transition hover:border-accent/70 hover:text-accent"
+							className="rounded-full border border-line/80 px-3 py-2 font-mono text-xs uppercase tracking-[0.14em] text-soft/80 transition hover:border-accent/70 hover:text-accent"
 						>
 							{social.name}
 						</a>

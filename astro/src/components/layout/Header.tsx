@@ -39,7 +39,7 @@ export default function Header() {
 						href="/CV_RAKAI.pdf"
 						target="_blank"
 						rel="noreferrer"
-						className="rounded-full border border-line/80 px-3 py-1.5 text-xs font-medium tracking-[0.08em] text-muted transition hover:border-accent/60 hover:text-soft"
+						className="rounded-full border border-line/80 px-3 py-1.5 text-xs font-medium tracking-[0.08em] text-soft/80 transition hover:border-accent/60 hover:text-soft"
 					>
 						CV
 					</a>
@@ -75,7 +75,7 @@ export default function Header() {
 							href="/CV_RAKAI.pdf"
 							target="_blank"
 							rel="noreferrer"
-							className="rounded-full border border-line/80 px-3 py-2 text-center font-mono text-xs text-muted"
+							className="rounded-full border border-line/80 px-3 py-2 text-center font-mono text-xs text-soft/80"
 						>
 							CV
 						</a>
@@ -110,7 +110,7 @@ function AnchorItem({
 			className={({ isActive }) =>
 				[
 					"rounded-full px-3 py-2 text-xs font-medium tracking-[0.1em] transition",
-					isActive ? "text-soft" : "text-muted hover:text-soft",
+					isActive ? "text-soft" : "text-soft/80 hover:text-soft",
 				].join(" ")
 			}
 		>
@@ -137,7 +137,7 @@ function NavItem({
 					"rounded-full border px-3 py-2 text-xs font-medium tracking-[0.1em] transition duration-200",
 					isActive
 						? "border-accent/70 bg-accent/10 text-accent"
-						: "border-line/80 text-muted hover:border-accent/60 hover:text-soft",
+						: "border-line/80 text-soft/80 hover:border-accent/60 hover:text-soft",
 				].join(" ")
 			}
 		>

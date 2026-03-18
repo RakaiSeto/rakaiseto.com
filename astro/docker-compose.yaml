@@ -2,12 +2,10 @@ version: "3.9"
 
 services:
   rakaiseto:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/rakaiseto/rakaiseto.com:latest
+    pull_policy: always
     networks:
       - rakaiseto-com-network
-    image: rakaiseto-com:latest
     container_name: rakaiseto-com
     restart: always
     ports:

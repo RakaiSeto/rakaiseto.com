@@ -26,12 +26,12 @@ export default function BlogRoute() {
 								<p className="mt-3 break-words whitespace-normal text-xl font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 									{post.title}
 								</p>
-								<p className="mt-2 text-sm text-muted">{post.description}</p>
+								<p className="mt-2 text-sm text-soft/80">{post.description}</p>
 								<div className="mt-3 flex flex-wrap gap-2">
 									{post.tags?.map((tag) => (
 										<span
 											key={`${post.slug}-${tag}`}
-											className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-muted"
+											className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-soft/80"
 										>
 											#{tag}
 										</span>

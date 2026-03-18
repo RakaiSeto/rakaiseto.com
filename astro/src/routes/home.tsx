@@ -36,7 +36,7 @@ export default function HomeRoute() {
 						<h1 className="mt-4 text-4xl font-semibold leading-[0.95] tracking-tight text-soft md:text-7xl">
 							Hello, I&apos;m Rakai.
 						</h1>
-						<p className="mt-6 max-w-xl text-sm leading-relaxed text-muted md:text-lg">
+						<p className="mt-6 max-w-xl text-sm leading-relaxed text-soft/80 md:text-lg">
 							I&apos;m a full-stack programmer based in Jakarta. I build fast,
 							clean web products and reliable backend-heavy systems.
 						</p>
@@ -77,7 +77,7 @@ export default function HomeRoute() {
 							].map((item) => (
 								<span
 									key={item}
-									className="rounded-full border border-line/70 bg-base/30 px-3 py-1 text-xs tracking-[0.08em] text-muted"
+									className="rounded-full border border-line/70 bg-base/30 px-3 py-1 text-xs tracking-[0.08em] text-soft/80"
 								>
 									{item}
 								</span>
@@ -127,7 +127,7 @@ export default function HomeRoute() {
 										<p className="mt-3 break-words whitespace-normal text-2xl font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 											{latestPost.title}
 										</p>
-										<p className="mt-2 text-sm leading-relaxed text-muted md:text-base">
+										<p className="mt-2 text-sm leading-relaxed text-soft/80 md:text-base">
 											{latestPost.description}
 										</p>
 									</BrutalCard>
@@ -145,7 +145,7 @@ export default function HomeRoute() {
 											<p className="mt-3 break-words whitespace-normal text-lg font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 												{blog.title}
 											</p>
-											<p className="mt-2 text-sm text-muted">
+											<p className="mt-2 text-sm text-soft/80">
 												{blog.description}
 											</p>
 										</BrutalCard>
@@ -157,7 +157,7 @@ export default function HomeRoute() {
 					<div className="mt-8 flex justify-end">
 						<Link
 							to="/blog"
-							className="rounded-full border border-line/80 px-4 py-2 text-sm font-medium tracking-[0.05em] text-muted transition hover:border-accent/65 hover:text-accent"
+							className="rounded-full border border-line/80 px-4 py-2 text-sm font-medium tracking-[0.05em] text-soft/80 transition hover:border-accent/65 hover:text-accent"
 						>
 							View all writings
 						</Link>
@@ -190,7 +190,7 @@ export default function HomeRoute() {
 								href="https://www.linkedin.com/in/rakaiseto"
 								target="_blank"
 								rel="noreferrer"
-								className="rounded-full border border-line/80 px-5 py-2.5 text-sm font-medium tracking-[0.04em] text-muted transition hover:border-accent/65 hover:text-accent"
+								className="rounded-full border border-line/80 px-5 py-2.5 text-sm font-medium tracking-[0.04em] text-soft/80 transition hover:border-accent/65 hover:text-accent"
 							>
 								Connect on LinkedIn
 							</a>

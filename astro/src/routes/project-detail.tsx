@@ -16,13 +16,13 @@ export default function ProjectDetailRoute() {
 				<h1 className="mt-3 text-3xl font-semibold tracking-tight text-soft md:text-5xl">
 					Project tidak ditemukan
 				</h1>
-				<p className="mt-4 max-w-xl text-sm text-muted md:text-base">
+				<p className="mt-4 max-w-xl text-sm text-soft/80 md:text-base">
 					Detail project untuk slug ini belum tersedia atau ada typo pada URL.
 				</p>
 				<div className="mt-7">
 					<Link
 						to="/projects"
-						className="rounded-full border border-line/80 px-4 py-2 text-sm font-medium tracking-[0.05em] text-muted transition hover:border-accent/65 hover:text-accent"
+						className="rounded-full border border-line/80 px-4 py-2 text-sm font-medium tracking-[0.05em] text-soft/80 transition hover:border-accent/65 hover:text-accent"
 					>
 						Kembali ke projects
 					</Link>
@@ -39,7 +39,7 @@ export default function ProjectDetailRoute() {
 			<h1 className="mt-3 break-words whitespace-normal text-4xl font-semibold leading-[0.95] tracking-tight text-soft [overflow-wrap:anywhere] md:text-6xl">
 				{project.title}
 			</h1>
-			<p className="mt-4 max-w-2xl text-sm text-muted md:text-base">
+			<p className="mt-4 max-w-2xl text-sm text-soft/80 md:text-base">
 				{project.description}
 			</p>
 			{project.techstack?.length ? (
@@ -47,7 +47,7 @@ export default function ProjectDetailRoute() {
 					{project.techstack.map((tech) => (
 						<span
 							key={tech}
-							className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-muted"
+							className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-soft/80"
 						>
 							{tech}
 						</span>

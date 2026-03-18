@@ -7,7 +7,7 @@ export default function NotFoundRoute() {
 			<h1 className="mt-3 text-5xl font-semibold tracking-tight text-soft">
 				Not Found
 			</h1>
-			<p className="mt-4 text-sm text-muted">
+			<p className="mt-4 text-sm text-soft/80">
 				The page you are looking for does not exist.
 			</p>
 			<Link

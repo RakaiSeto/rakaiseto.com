@@ -34,14 +34,14 @@ export default function ProjectsRoute() {
 										<p className="break-words whitespace-normal text-xl font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 											{project.title}
 										</p>
-										<p className="mt-2 break-words whitespace-normal text-sm text-muted [overflow-wrap:anywhere]">
+										<p className="mt-2 break-words whitespace-normal text-sm text-soft/80 [overflow-wrap:anywhere]">
 											{project.description}
 										</p>
 										<div className="mt-3 flex flex-wrap gap-2">
 											{project.techstack?.map((tech) => (
 												<span
 													key={`${project.slug}-${tech}`}
-													className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-muted"
+													className="rounded-full border border-line/70 px-2.5 py-1 font-mono text-[11px] tracking-[0.08em] text-soft/80"
 												>
 													{tech}
 												</span>

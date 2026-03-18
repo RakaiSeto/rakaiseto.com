@@ -13,7 +13,7 @@ export default function PageHeading({
 			<h1 className="mt-3 text-4xl font-semibold leading-[1.02] tracking-tight text-soft md:text-6xl">
 				{title}
 			</h1>
-			<p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-lg">
+			<p className="mt-4 max-w-2xl text-sm leading-relaxed text-soft/80 md:text-lg">
 				{description}
 			</p>
 		</div>

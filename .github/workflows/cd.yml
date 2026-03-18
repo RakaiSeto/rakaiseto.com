@@ -77,11 +77,10 @@ jobs:
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
 
             echo "Pulling latest image..."
-            docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            docker compose pull
 
             echo "Restarting container..."
-            docker compose down || true
-            docker compose up -d
+            docker compose up -d --force-recreate --remove-orphans
 
             echo "Status:"
             docker compose ps
