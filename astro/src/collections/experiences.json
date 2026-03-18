@@ -1,37 +1,44 @@
 [
-    {
-		"dates": "September 2025 · present",
-		"role": "Backend Developer",
-		"company": "Sekawan Media",
-		"description": "Being part of the team behind HaloGigi, a dental self screening and telemedicine platform. Developed fast and efficient backend API for the platform using laravel and MySQL, provided clean data for mobile developers, ensuring application stability and speed.",
-		"logo": "/assets/images/experiences/sekawan.png"
-	},
-    {
-		"dates": "September 2024 · September 2025",
-		"role": "Co Founder / Backend Developer",
-		"company": "Stealth Startup (Undisclosed Company)",
-		"description": "Co-founded and developed the backend for a SaaS telecomunication platform used by one of Indonesia’s major ride-hailing companies. Designed scalable microservices using Go, PostgreSQL, and Redis to handle high-traffic operations, while implementing CI/CD pipelines with Docker and Git. Led backend development and ensured secure, reliable, and high-performance systems for large-scale production use.",
-		"logo": "/assets/images/experiences/cloud.png"
-	},
-	{
-		"dates": "March 2024 · September 2024",
-		"role": "Full Stack Developer",
-		"company": "Ardora Cipta Kreasi Teknologi",
-		"description": "Introduced Docker and Docker Compose to streamline deployment processes and improved backend performance using Go—resulting in a RAM usage reduction of over 50%—while creating API connections for messaging, payment, and billing vendors. Additionally, I developed web applications for both client and admin usage and assisted in building an e-commerce dashboard using Laravel.",
-		"logo": "/assets/images/experiences/ardora.png"
-	},
-	{
-		"dates": "January 2023 · March 2024",
-		"role": "Full Stack Developer",
-		"company": "Artamaya Makmur Abadi",
-		"description": "Developed a Laravel-based POS system for cashier dashboards and client orders, integrating Go and gRPC to ensure secure data transmission and improved transaction efficiency. Maintained server reliability and designed transmitters to streamline vendor-client connectivity, ensuring consistent application uptime.",
-		"logo": "/assets/images/experiences/artamaya.jpg"
-	},
-	{
-		"dates": "May 2022 · October 2022",
-		"role": "Software Developer Internship",
-		"company": "PT. Pintar Cari Usaha",
-		"description": "Supported troubleshooting and optimization of internal backend code.",
-		"logo": "/assets/images/experiences/pcu.jpg"
-	}
+  {
+    "dates": "January 2026 · present",
+    "role": "Fullstack Developer Internship",
+    "company": "PT. Surabaya Autocomp Indonesia",
+    "description": "Maintain and develop new web apps for Safety, Health, and Environment team. Ensuring rapid birocration digitalization and availability for the team and factory",
+    "logo": "/assets/images/experiences/cloud.png"
+  },
+  {
+    "dates": "September 2025 · present",
+    "role": "Backend Developer",
+    "company": "Sekawan Media",
+    "description": "Being part of the team behind HaloGigi, a dental self screening and telemedicine platform. Developed fast and efficient backend API for the platform using laravel and MySQL, provided clean data for mobile developers, ensuring application stability and speed.",
+    "logo": "/assets/images/experiences/sekawan.png"
+  },
+  {
+    "dates": "September 2024 · September 2025",
+    "role": "Co Founder / Backend Developer",
+    "company": "Stealth Startup (Undisclosed Company)",
+    "description": "Co-founded and developed the backend for a SaaS telecomunication platform used by one of Indonesia’s major ride-hailing companies. Designed scalable microservices using Go, PostgreSQL, and Redis to handle high-traffic operations, while implementing CI/CD pipelines with Docker and Git. Led backend development and ensured secure, reliable, and high-performance systems for large-scale production use.",
+    "logo": "/assets/images/experiences/cloud.png"
+  },
+  {
+    "dates": "March 2024 · September 2024",
+    "role": "Full Stack Developer",
+    "company": "Ardora Cipta Kreasi Teknologi",
+    "description": "Introduced Docker and Docker Compose to streamline deployment processes and improved backend performance using Go—resulting in a RAM usage reduction of over 50%—while creating API connections for messaging, payment, and billing vendors. Additionally, I developed web applications for both client and admin usage and assisted in building an e-commerce dashboard using Laravel.",
+    "logo": "/assets/images/experiences/ardora.png"
+  },
+  {
+    "dates": "January 2023 · March 2024",
+    "role": "Full Stack Developer",
+    "company": "Artamaya Makmur Abadi",
+    "description": "Developed a Laravel-based POS system for cashier dashboards and client orders, integrating Go and gRPC to ensure secure data transmission and improved transaction efficiency. Maintained server reliability and designed transmitters to streamline vendor-client connectivity, ensuring consistent application uptime.",
+    "logo": "/assets/images/experiences/artamaya.jpg"
+  },
+  {
+    "dates": "May 2022 · October 2022",
+    "role": "Software Developer Internship",
+    "company": "PT. Pintar Cari Usaha",
+    "description": "Supported troubleshooting and optimization of internal backend code.",
+    "logo": "/assets/images/experiences/pcu.jpg"
+  }
 ]

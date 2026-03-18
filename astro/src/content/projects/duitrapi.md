@@ -9,7 +9,7 @@ techstack: ["React.js", "Node.js", "AWS"]
 
 ---
 
-<div class="flex justify-center"> <img src="/assets/images/projects/duitrapi/duitrapi.png" alt="DuitRapi" class="max-w-[5rem]" /> </div>
+![DuitRapi](/assets/images/projects/duitrapi/duitrapi.png)
 DuitRapi is an uncoming project of mine for managing financial input and output report. The project is built using React.js and Node.js. Several features are planned to be implemented, such as:
 
 - Financial input and output report
