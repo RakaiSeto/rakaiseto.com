@@ -1,41 +1,18 @@
-# ───────────────────────
-# 1) BUILD STAGE
-# ───────────────────────
 FROM node:20-slim AS builder
 
 WORKDIR /app
 
-# Install ALL dependencies (including dev)
 COPY package*.json ./
 RUN npm ci
 
-# Copy full project
 COPY . .
-
-# Build Astro
 RUN npm run build
 
+FROM nginx:1.27-alpine AS runner
 
-# ───────────────────────
-# 2) RUNTIME STAGE
-# ───────────────────────
-FROM node:20-slim AS runner
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-WORKDIR /app
+EXPOSE 80
 
-# Copy only package files again
-COPY package*.json ./
-
-# Install ONLY prod dependencies
-RUN npm ci --omit=dev
-
-# Copy built output from builder
-COPY --from=builder /app/dist ./dist
-
-# If you need server files (adapter-node), include them too:
-COPY --from=builder /app/.astro ./.astro
-
-# EXPOSE must match Astro server port
-EXPOSE 4321
-
-CMD ["node", "./dist/server/entry.mjs"]
+CMD ["nginx", "-g", "daemon off;"]

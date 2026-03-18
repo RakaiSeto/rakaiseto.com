@@ -2,16 +2,16 @@ version: "3.9"
 
 services:
   rakaiseto:
+    build:
+      context: .
+      dockerfile: Dockerfile
     networks:
       - rakaiseto-com-network
-    image: ghcr.io/rakaiseto/rakaiseto.com:latest
+    image: rakaiseto-com:latest
     container_name: rakaiseto-com
     restart: always
     ports:
-      - "127.0.0.1:21001:8092"
-    environment:
-      NODE_ENV: production
-      PORT: 8092
-      HOST: "0.0.0.0"
+      - "127.0.0.1:21001:80"
+
 networks:
   rakaiseto-com-network:
