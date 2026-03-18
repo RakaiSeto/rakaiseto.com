@@ -46,6 +46,16 @@ html.snap-home {
 	scroll-snap-align: start;
 }
 
+@media (max-width: 768px) {
+	html.snap-home {
+		scroll-snap-type: none;
+	}
+
+	.snap-point {
+		scroll-snap-align: none;
+	}
+}
+
 .clamp-2,
 .clamp-3 {
 	display: -webkit-box;

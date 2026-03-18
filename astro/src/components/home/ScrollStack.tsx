@@ -92,10 +92,9 @@ export default function ScrollStack({
 
 	const getScrollData = useCallback(() => {
 		if (useWindowScroll) {
-			const scroller = scrollerRef.current;
 			return {
 				scrollTop: window.scrollY,
-				containerHeight: scroller?.clientHeight ?? window.innerHeight,
+				containerHeight: window.innerHeight,
 			};
 		}
 
@@ -128,7 +127,26 @@ export default function ScrollStack({
 		isUpdatingRef.current = true;
 
 		const { scrollTop, containerHeight } = getScrollData();
-		const stackPositionPx = parsePercentage(stackPosition, containerHeight);
+		const isMobileWindowScroll =
+			useWindowScroll && window.matchMedia("(max-width: 768px)").matches;
+		const effectiveStackPosition = isMobileWindowScroll ? "6%" : stackPosition;
+		const epsilon = isMobileWindowScroll
+			? {
+					translateY: 0.02,
+					scale: 0.0005,
+					rotation: 0.04,
+					blur: 0.04,
+				}
+			: {
+					translateY: 0.1,
+					scale: 0.001,
+					rotation: 0.1,
+					blur: 0.1,
+				};
+		const stackPositionPx = parsePercentage(
+			effectiveStackPosition,
+			containerHeight,
+		);
 		const scaleEndPositionPx = parsePercentage(
 			scaleEndPosition,
 			containerHeight,
@@ -184,20 +202,15 @@ export default function ScrollStack({
 				translateY = pinEnd - cardTop + stackPositionPx + itemStackDistance * i;
 			}
 
-			const nextTransform = {
-				translateY: Math.round(translateY * 100) / 100,
-				scale: Math.round(scale * 1000) / 1000,
-				rotation: Math.round(rotation * 100) / 100,
-				blur: Math.round(blur * 100) / 100,
-			};
-
+			const nextTransform = { translateY, scale, rotation, blur };
 			const last = lastTransformsRef.current.get(i);
 			const hasChanged =
 				!last ||
-				Math.abs(last.translateY - nextTransform.translateY) > 0.1 ||
-				Math.abs(last.scale - nextTransform.scale) > 0.001 ||
-				Math.abs(last.rotation - nextTransform.rotation) > 0.1 ||
-				Math.abs(last.blur - nextTransform.blur) > 0.1;
+				Math.abs(last.translateY - nextTransform.translateY) >
+					epsilon.translateY ||
+				Math.abs(last.scale - nextTransform.scale) > epsilon.scale ||
+				Math.abs(last.rotation - nextTransform.rotation) > epsilon.rotation ||
+				Math.abs(last.blur - nextTransform.blur) > epsilon.blur;
 
 			if (hasChanged) {
 				card.style.transform = `translate3d(0, ${nextTransform.translateY}px, 0) scale(${nextTransform.scale}) rotate(${nextTransform.rotation}deg)`;
@@ -229,6 +242,7 @@ export default function ScrollStack({
 		rotationAmount,
 		scaleEndPosition,
 		stackPosition,
+		useWindowScroll,
 	]);
 
 	const handleScroll = useCallback(() => {
@@ -237,15 +251,18 @@ export default function ScrollStack({
 
 	const setupLenis = useCallback(() => {
 		if (useWindowScroll) {
+			const isMobileWindowScroll = window.matchMedia(
+				"(max-width: 768px)",
+			).matches;
 			const lenis = new Lenis({
 				duration: 1.2,
 				easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
 				smoothWheel: true,
-				touchMultiplier: 2,
+				touchMultiplier: isMobileWindowScroll ? 1.2 : 2,
 				infinite: false,
 				wheelMultiplier: 1,
-				lerp: 0.1,
-				syncTouch: true,
+				lerp: isMobileWindowScroll ? 0.08 : 0.1,
+				syncTouch: !isMobileWindowScroll,
 				syncTouchLerp: 0.075,
 			});
 

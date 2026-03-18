@@ -17,7 +17,7 @@ export default function ProjectsScrollStack({
 
 	return (
 		<section>
-			<div className="relative h-[60svh] overflow-visible md:h-[66svh]">
+			<div className="relative h-[56svh] overflow-visible md:h-[66svh]">
 				<ScrollStack
 					className="h-full"
 					itemDistance={64}

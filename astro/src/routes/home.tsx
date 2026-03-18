@@ -97,7 +97,7 @@ export default function HomeRoute() {
 
 			<section
 				id="work"
-				className="snap-point relative z-10 min-h-[165svh] md:min-h-[190svh]"
+				className="snap-point relative z-10 min-h-[112rem] pb-32 md:min-h-[118rem] md:pb-0"
 			>
 				<div className="sticky top-24 z-40 pb-3 backdrop-blur-md">
 					<PageHeading
@@ -105,13 +105,13 @@ export default function HomeRoute() {
 						description="A stacked, scroll-driven view of featured work."
 					/>
 				</div>
-				<div className="sticky top-[13.5rem] z-20 md:top-[15.5rem]">
+				<div className="sticky top-[7rem] z-20 md:top-[15.5rem]">
 					<ProjectsScrollStack projects={projects} />
 				</div>
 			</section>
 
 			<Reveal className="snap-point" delay={60}>
-				<section id="writing" className="relative z-30 min-h-[52svh]">
+				<section id="writing" className="relative z-30 min-h-[52svh] pt-3 md:pt-7">
 					<PageHeading
 						title="Recent Writings"
 						description="Thoughts and essays."

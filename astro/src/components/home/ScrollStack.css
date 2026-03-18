@@ -28,7 +28,7 @@
 }
 
 .scroll-stack-scroller--window .scroll-stack-inner {
-  padding: 0.5rem 0.2rem 0.75rem;
+  padding: 0.5rem 0.2rem clamp(7rem, 14vh, 11rem);
   min-height: auto;
 }
 
@@ -68,7 +68,7 @@
   }
 
   .scroll-stack-scroller--window .scroll-stack-inner {
-    padding: 0.4rem 0 0.5rem;
+    padding: 0.4rem 0 clamp(7rem, 12vh, 10rem);
   }
 
   .scroll-stack-card {
