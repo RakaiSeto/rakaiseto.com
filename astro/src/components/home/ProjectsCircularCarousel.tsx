@@ -121,7 +121,7 @@ export default function ProjectsCircularCarousel({
 								alt={project.name}
 								className="aspect-video w-full rounded-xl border border-line/50 object-cover"
 							/>
-							<p className="clamp-2 mt-3 text-sm font-semibold leading-tight text-soft md:text-base">
+							<p className="clamp-2 mt-3 text-sm font-semibold leading-tight text-soft md:text-[1rem]">
 								{project.name}
 							</p>
 							<p className="clamp-2 mt-1 text-xs leading-relaxed text-soft/80 md:text-sm">

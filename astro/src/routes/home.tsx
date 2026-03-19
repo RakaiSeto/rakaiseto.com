@@ -31,14 +31,14 @@ export default function HomeRoute() {
 				<section className="grid min-h-[78svh] items-center gap-8 rounded-3xl border border-line/70 bg-surface/70 p-7 shadow-panel md:grid-cols-[1.2fr_0.8fr] md:p-12">
 					<div>
 						<p className="font-mono text-xs tracking-[0.22em] text-accent">
-							FULLSTACK ENGINEER
+							FULLSTACK DEVELOPER
 						</p>
 						<h1 className="mt-4 text-4xl font-semibold leading-[0.95] tracking-tight text-soft md:text-7xl">
 							Hello, I&apos;m Rakai.
 						</h1>
 						<p className="mt-6 max-w-xl text-sm leading-relaxed text-soft/80 md:text-lg">
-							I&apos;m a full-stack programmer based in Jakarta. I build fast,
-							clean web products and reliable backend-heavy systems.
+							I&apos;m a fullstack developer based in Jakarta. I build fast,
+							clean scalable products and reliable backend-heavy systems.
 						</p>
 						<div className="mt-8 flex flex-wrap gap-3">
 							<a
@@ -71,7 +71,7 @@ export default function HomeRoute() {
 								"Go",
 								"Laravel",
 								"Node.js",
-								"PostgreSQL",
+								"Django",
 								"Redis",
 								"Docker",
 							].map((item) => (
@@ -127,7 +127,7 @@ export default function HomeRoute() {
 										<p className="mt-3 break-words whitespace-normal text-2xl font-semibold leading-tight text-soft [overflow-wrap:anywhere]">
 											{latestPost.title}
 										</p>
-										<p className="mt-2 text-sm leading-relaxed text-soft/80 md:text-base">
+									<p className="mt-2 text-sm leading-relaxed md:text-[1rem] text-soft/80">
 											{latestPost.description}
 										</p>
 									</BrutalCard>

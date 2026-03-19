@@ -9,18 +9,19 @@ export default function AboutRoute() {
 	return (
 		<div className="space-y-12">
 			<Reveal>
-				<PageHeading
-					title="About Me"
-					description="Hello, I'm a fullstack developer with strong backend focus and a love for building reliable products."
-				/>
-			</Reveal>
-
-			<Reveal>
-				<img
-					src="/assets/images/about.jpg"
-					alt="About Rakai"
-					className="w-full rounded-3xl border border-line/70 shadow-card"
-				/>
+				<div className="grid items-stretch gap-6 md:grid-cols-[0.3fr_0.7fr] md:gap-8">
+					<img
+						src="/assets/images/about.jpg"
+						alt="About Rakai"
+						className="h-full max-h-[26rem] w-full rounded-3xl border border-line/70 object-cover shadow-card"
+					/>
+					<div className="[&>div]:mb-0">
+						<PageHeading
+							title="About Me"
+							description="Hello, I'm Rakai, a fullstack developer with 3+ years of experience and a deep love for building reliable, scalable products. My expertise is heavily rooted in backend development using Golang, Django and modern Node.js frameworks, paired with frontend technologies like React.js and Astro. I'm driven by a curiosity to solve hard technical challenges, from optimizing server deployments to integrating multiple API together, always aiming to deliver seamless digital experiences."
+						/>
+					</div>
+				</div>
 			</Reveal>
 
 			<InfoTimeline title="Experience" entries={experiences} />
@@ -98,7 +99,7 @@ function InfoTimeline({ title, entries }: { title: string; entries: Entry[] }) {
 											</div>
 										)}
 										<div className="min-w-0">
-											<p className="text-base font-semibold text-soft md:text-lg">
+										<p className="text-[1rem] font-semibold text-soft md:text-lg">
 												{group.company}
 											</p>
 											{group.items.length > 1 ? (
@@ -124,7 +125,7 @@ function InfoTimeline({ title, entries }: { title: string; entries: Entry[] }) {
 											<p className="font-mono text-xs uppercase tracking-[0.13em] text-soft/80">
 												{item.dates}
 											</p>
-											<p className="mt-2 text-base font-semibold leading-tight text-soft md:text-lg">
+										<p className="mt-2 text-[1rem] font-semibold leading-tight text-soft md:text-lg">
 												{item.role}
 											</p>
 											{item.description ? (

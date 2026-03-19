@@ -16,7 +16,7 @@ export default function BlogDetailRoute() {
 				<h1 className="mt-3 text-3xl font-semibold tracking-tight text-soft md:text-5xl">
 					Tulisan tidak ditemukan
 				</h1>
-				<p className="mt-4 max-w-xl text-sm text-soft/80 md:text-base">
+				<p className="mt-4 max-w-xl text-sm text-soft/80 md:text-[1rem]">
 					Detail tulisan untuk slug ini belum tersedia atau ada typo pada URL.
 				</p>
 				<div className="mt-7">

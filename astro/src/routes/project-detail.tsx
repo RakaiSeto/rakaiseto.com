@@ -16,7 +16,7 @@ export default function ProjectDetailRoute() {
 				<h1 className="mt-3 text-3xl font-semibold tracking-tight text-soft md:text-5xl">
 					Project tidak ditemukan
 				</h1>
-				<p className="mt-4 max-w-xl text-sm text-soft/80 md:text-base">
+				<p className="mt-4 max-w-xl text-sm text-soft/80 md:text-[1rem]">
 					Detail project untuk slug ini belum tersedia atau ada typo pada URL.
 				</p>
 				<div className="mt-7">
@@ -39,7 +39,7 @@ export default function ProjectDetailRoute() {
 			<h1 className="mt-3 break-words whitespace-normal text-4xl font-semibold leading-[0.95] tracking-tight text-soft [overflow-wrap:anywhere] md:text-6xl">
 				{project.title}
 			</h1>
-			<p className="mt-4 max-w-2xl text-sm text-soft/80 md:text-base">
+			<p className="mt-4 max-w-2xl text-sm text-soft/80 md:text-[1rem]">
 				{project.description}
 			</p>
 			{project.techstack?.length ? (
